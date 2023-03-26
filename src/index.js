@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './style/mySass.scss';
 
 const myFirstElement = (
 // The HTML code must be wrapped in ONE top level element. 
@@ -8,7 +9,7 @@ const myFirstElement = (
 // This will prevent unnecessarily adding extra nodes to the DOM.
 // A fragment looks like an empty HTML tag: <></> 
 <>    
-    <h1>Hi, welcome to my sandbox!</h1>
+    <h1 className="headline-text">Hi, welcome to my sandbox!</h1>
     <div className="intro-text">
       I am a Software Engineer in the renewable energy sector. 
       Starting in 2023 I continue to be a Software Engineer in part-time 3 days/week.
@@ -18,11 +19,11 @@ const myFirstElement = (
     </div>
     <img src="https://media.licdn.com/dms/image/C4E03AQHMV3LhLDcxRA/profile-displayphoto-shrink_800_800/0/1626428291928?e=2147483647&v=beta&t=d9_gewPgcY6lEr4P1umFjUIsc0IdriiR7jqNCz0THYs" alt="profile picture" className="profile-picture"/>
     <h2>My Projects</h2>
-    <div className="project-preview">
-      <a href="https://tp-ecommerce.vercel.app/">
-        <button className="project-preview-button">Go there</button>
-        <iframe src="https://tp-ecommerce.vercel.app/" width="400" height="400"></iframe>
-      </a>
+    <div className="project-preview-flex">
+      <div className="project-preview">
+        <a className="project-preview-link" href="https://tp-ecommerce.vercel.app/"></a>
+        <iframe className="project-preview-iframe" src="https://tp-ecommerce.vercel.app/" width="400" height="400" scrolling="no"></iframe>
+      </div>
     </div>
 </>
 );
