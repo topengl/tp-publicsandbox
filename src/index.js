@@ -1,3 +1,5 @@
+// install all packages from packages.json with Termainal: npm install
+// start localserver with Terminal: npm start
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './style/mySass.scss';
@@ -17,7 +19,9 @@ const myFirstElement = (
 
       On tp-publicsandbox I want to try out the "WebDev-things" I learned and also link other projects I work on.
     </div>
-    <img src="https://media.licdn.com/dms/image/C4E03AQHMV3LhLDcxRA/profile-displayphoto-shrink_800_800/0/1626428291928?e=2147483647&v=beta&t=d9_gewPgcY6lEr4P1umFjUIsc0IdriiR7jqNCz0THYs" alt="profile picture" className="profile-picture"/>
+    <img  src="https://avatars.githubusercontent.com/u/34744318?s=400&v=4" 
+          alt="profile picture" 
+          className="profile-picture"/>
     <h2>My Projects</h2>
     <div className="project-preview-flex">
       <div className="project-preview">
